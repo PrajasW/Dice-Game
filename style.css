@@ -13,7 +13,7 @@ body{
 .dice-container{
     display: flex;
     justify-content: space-evenly;
-}
+} 
 .dice{
     margin: 10px;
 }
@@ -35,12 +35,12 @@ button{
     position: relative;
     width: 150px;
     height: 50px;
-
+    
     background: #113A29;
     border-radius: 73px;
-
+    
     /* identical to box height */
-
+    
     color: #B5F0D7;
 }
 button:hover{
@@ -49,10 +49,10 @@ button:hover{
     position: relative;
     width: 150px;
     height: 50px;
-
+    
     background: #194A35;
     border-radius: 73px;
-
+    
     /* identical to box height */
 
     color: #B5F0D7;
@@ -64,10 +64,16 @@ button:hover{
     height: 23px;
     left: 33px;
     top: 14px;
-
+    
     font-family: 'Courier New';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
+}
+@media (max-width: 500px) {
+    .dice-container {
+      flex-direction: column;
+      align-self: center;
+    }
 }
