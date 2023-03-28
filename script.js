@@ -46,11 +46,15 @@ function changeResults(d1,d2){
     }
 }
 function reroll(){
+    const sound = document.getElementById("roll-sound")
+    sound.play()
     let d1 = Math.floor(Math.random()*6) + 1 
     let d2 = Math.floor(Math.random()*6) + 1
-    changeImage(d1,d2)
-    changeResults(d1,d2)
-    document.getElementById("player-1").innerHTML = "player 1"
-    document.getElementById("player-2").innerHTML = "player 2"
-    document.getElementById("button-text").innerHTML = "Re-Roll"
+    setTimeout(() => {
+        changeImage(d1,d2)
+        changeResults(d1,d2)
+        document.getElementById("player-1").innerHTML = "player 1"
+        document.getElementById("player-2").innerHTML = "player 2"
+        document.getElementById("button-text").innerHTML = "Re-Roll"
+    }, 500);
 }
