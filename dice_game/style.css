@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(107, 189, 107);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+}   
+.dice-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.dice{
+    margin: 10px;
+}
+img{
+    height: 200px;
+}
+.header{
+    align-self: center;
+}
+h3{
+    text-align  : center;
+}
+.result{
+    text-align: center;
+}
+button{
+    align-self: center;
+    width: 100px;
+    position: relative;
+    width: 150px;
+    height: 50px;
+
+    background: #113A29;
+    border-radius: 73px;
+
+    /* identical to box height */
+
+    color: #B5F0D7;
+}
+button:hover{
+    align-self: center;
+    width: 100px;
+    position: relative;
+    width: 150px;
+    height: 50px;
+
+    background: #194A35;
+    border-radius: 73px;
+
+    /* identical to box height */
+
+    color: #B5F0D7;
+}
+.button-text{
+    /* Re Roll */
+    position: absolute;
+    width: 85px;
+    height: 23px;
+    left: 33px;
+    top: 14px;
+
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
