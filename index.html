@@ -13,19 +13,19 @@
         <h1 class="header" >Dice Game</h1>
         <div class="dice-container">
             <div class="dice">
-                <h3>player 1</h3>
+                <h3 id="player-1"></h3>
                 <div id="p1-dice"></div>
                 <!-- <img src="dice/dice_1.png" alt="dice_1.png"> -->
             </div>
             <div class="dice">
-                <h3>player 2</h3>
+                <h3 id="player-2"></h3>
                 <div id="p2-dice"></div>
                 <!-- <img src="dice/dice_2.png" alt="dice_1.png"> -->
             </div>
         </div>
         <h2 class="result" id="result"></h2>
-        <button type="submit" onclick="reroll()"><div class="button-text">
-            Re-Roll
+        <button type="submit" onclick="reroll()"><div class="button-text" id="button-text">
+            Roll
         </div></button>
     </div>
     <script src="script.js"></script>

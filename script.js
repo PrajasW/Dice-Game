@@ -1,5 +1,3 @@
-console.log("hello world")
-
 function getImage(roll)
 {
     let link;
@@ -50,8 +48,9 @@ function changeResults(d1,d2){
 function reroll(){
     let d1 = Math.floor(Math.random()*6) + 1 
     let d2 = Math.floor(Math.random()*6) + 1
-    console.log("dice 1 rolled "+d1)
-    console.log("dice 2 rolled "+d2)
     changeImage(d1,d2)
     changeResults(d1,d2)
+    document.getElementById("player-1").innerHTML = "player 1"
+    document.getElementById("player-2").innerHTML = "player 2"
+    document.getElementById("button-text").innerHTML = "Re-Roll"
 }
